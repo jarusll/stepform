@@ -6,7 +6,7 @@ import SuccessPage from "./components/SuccessPage";
 
 function App() {
   return (
-    <div className="mw6 center sans-serif near-black">
+    <div className="mw7 center sans-serif near-black">
       <Stepform>
         <UserForm />
         <WorkspaceForm />
