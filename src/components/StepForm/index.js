@@ -3,21 +3,22 @@ import Stepper from 'react-stepper-horizontal';
 
 export default function StepForm({ children, change }) {
 
-    const [formState, dispatch] = useReducer(formReducer)
+    const initialState = {
+        index: 3
+    }
+    const [formState, dispatch] = useReducer(formReducer, initialState)
 
-    const initialState = {}
-    function formReducer(state = initialState, {type, payload}){
+    function formReducer(state, {type, payload}){
         switch(type){
             default:
                 return state
         }
     }
 
-    const [currentIndex, setCurrentIndex] = useState(1)
     return <div>
-        <div>
-            <Stepper steps={Array.from(Array(4).keys())} activeColor="#664de5"/>
+        <div className="w-50 center">
+            <Stepper steps={Array.from(Array(children.length).keys())} activeColor="#664de5"/>
         </div>
-        {children[currentIndex]}
+        {children[formState.index]}
     </div>
 }
