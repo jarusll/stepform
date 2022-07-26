@@ -4,6 +4,6 @@ export default function Input({label, ...props}){
             <label htmlFor={props?.name}>{props?.name}</label>
             <span className="gray">{props?.info}</span>
         </div>
-        <input {...props} className="pa2 br2 ba b--black-20"/>
+        <input {...props} className="pa3 br2 ba b--black-20"/>
     </div>
 }
