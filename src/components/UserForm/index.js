@@ -9,7 +9,7 @@ export default function UserForm({ dispatch }) {
         </div>
         <form>
             <Input value="" placeholder="Steve Jobs" name="Full Name" />
-            <Input value="" placeholder="Steve" name="Display Name" />
+            <Input value="" placeholder="Steve" name="Display Name"/>
             <Button>Create Workspace</Button>
         </form>
     </div>

@@ -1,9 +1,9 @@
 export default function Input({label, ...props}){
-    return <div className="m0 flex flex-column">
-        <div className="m0">
+    return <div className="m0 mb3 flex flex-column">
+        <div className="m0 mb1 outline-none">
             <label htmlFor={props?.name}>{props?.name}</label>
             <span className="gray">{props?.info}</span>
         </div>
-        <input {...props}/>
+        <input {...props} className="pa2 br2 ba b--black-20"/>
     </div>
 }
