@@ -1,5 +1,7 @@
 # Stepform
 
+![Showcase](./showcase.png)
+
 A step form demo.
 
 # Run
