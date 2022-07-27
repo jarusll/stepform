@@ -26,6 +26,7 @@ export default function TypeForm() {
             </div>
         </div>
         <Button onClick={() => {
+            dispatch(action("typeData", selected))
             dispatch(action("next"))
         }}>Create Workspace</Button>
     </StepFormItem>
