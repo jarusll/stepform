@@ -6,7 +6,7 @@ export const DispatchContext = createContext()
 export default function StepForm({ children, change }) {
 
     const initialState = {
-        index: 0
+        index: 2
     }
     const [formState, dispatch] = useReducer(formReducer, initialState)
 
