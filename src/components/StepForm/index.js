@@ -22,6 +22,18 @@ export default function StepForm({ children, change }) {
                 return produce(state, x => {
                     x.index = payload
                 })
+            case "userData":
+                return produce(state, x => {
+                    x.userData = payload
+                })
+            case "workspaceData":
+                return produce(state, x => {
+                    x.workspaceData = payload
+                })
+            case "typeData":
+                return produce(state, x => {
+                    x.typeData = payload
+                })
             default:
                 return state
         }
