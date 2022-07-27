@@ -45,7 +45,7 @@ export default function StepForm({ children, change }) {
             // generate array of indexes
             steps={Array.from(Array(children.length).keys())
                 .map(x => ({ index: x, onClick: e => dispatch(action("goto", x)) }))}
-                activeColor="#664de5"
+                activeColor="#664de5" size={45}
                 completeColor="#664de5" defaultColor="#A9A9A9"
                 activeStep={formState.index} />
         </div>
