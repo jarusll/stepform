@@ -1,3 +1,3 @@
-export default function action(actionString){
-    return {type: actionString}
+export default function action(actionString, payload){
+    return {type: actionString, payload: payload ?? ""}
 }

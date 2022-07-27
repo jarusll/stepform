@@ -8,7 +8,7 @@ import { DispatchContext } from "../StepForm";
 export default function UserForm() {
     const dispatch = useContext(DispatchContext)
     return <StepFormItem title="Welcome! First things first..." subtitle="You can always change them later.">
-        <Input defaultValue="" placeholder="Steve Jobs" name="Full Name" />
+        <Input defaultValue="" placeholder="Steve Jobs" name="Full Name" required/>
         <Input defaultValue="" placeholder="Steve" name="Display Name" />
         <Button onClick={() => {
             dispatch(action("next"))
